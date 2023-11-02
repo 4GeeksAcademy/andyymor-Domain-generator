@@ -1,11 +1,12 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+const randomDomanin = () => {
+  let pronoun = ["The", "our"];
+  let adj = ["Wonderful", "gargantuan", "vituparative"];
+  let domamin = [".com", ".net", ".org"];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
+  for (let i = 0; i < pronoun.length; i++)
+    for (let x = 0; x < adj.length; x++)
+      for (let z = 0; z < domamin.length; z++)
+        console.log(pronoun[i] + adj[x] + domamin[z]);
 };
+
+console.log(randomDomanin());
